@@ -13,6 +13,9 @@ class RUNANDSURVIVE_API AMyHero : public ACharacter
 public:
 	void MoveForward(float Value);
 	void MoveRight(float Value);
+    
+    void StartCrouch();
+    void StopCrouch();
 
 public:
 	// Sets default values for this character's properties
