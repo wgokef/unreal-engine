@@ -17,6 +17,20 @@ public:
     void StartCrouch();
     void StopCrouch();
 
+	// 👇 СПРИНТ
+    void StartSprint();
+    void StopSprint();
+	
+
+	private:
+    // 👇 ПЕРЕМЕННЫЕ ДЛЯ ПЛАВНОГО ПРИСЕДАНИЯ
+    float StandingCapsuleHalfHeight;   // Высота стоя
+    float CrouchingCapsuleHalfHeight;  // Высота в приседе
+    float TargetCapsuleHalfHeight;     // Куда стремимся
+
+	// 👇 ФЛАГ ПРИСЕДАНИЯ (нужен для защиты спринта)
+    bool bIsCrouching;
+
 public:
 	// Sets default values for this character's properties
 	AMyHero();
